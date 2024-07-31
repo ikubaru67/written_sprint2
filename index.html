@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Written Sprint-2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+    <!-- Form Input Pembelian -->
+    <div class="card">
+      <center>
+        <h2>IkubaruShop</h2>
+      </center>
+      <form action="" id="myForm">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama" required /><br />
+
+        <label for="pilih-item">Pilih Item</label>
+        <select name="pilih_item" id="pilih-item" required>
+          <option value="28000-27550">Weekly Diamond Pass - Rp. 28.000</option>
+          <option value="8000-7600">28 Diamonds - Rp. 8.000</option>
+          <option value="12000-11400">44 Diamonds - Rp. 12.000</option>
+          <option value="15500-15200">59 Diamonds - Rp. 15.500</option>
+          <option value="22000-21850">85 Diamonds - Rp. 22.000</option>
+          <option value="45000-43700">170 Diamonds - Rp. 45.000</option>
+          <option value="63000-61750">240 Diamonds - Rp. 63.000</option>
+          <option value="80000-76000">296 Diamonds - Rp. 80.000</option>
+          <option value="110000-104500">408 Diamonds - Rp. 110.000</option>
+          <option value="150000-142500">568 Diamonds - Rp. 150.000</option>
+          <option value="225000-218500">875 Diamonds - Rp. 225.000</option>
+          <option value="500000-475000">2010 Diamonds - Rp. 500.000</option>
+          <option value="1200000-1140000">4830 Diamonds - Rp. 1.200.000</option>
+        </select>
+        <br />
+
+        <label for="pembayaran-via">Pembayaran via</label>
+        <select name="pembayaran_via" id="pembayaran-via" required>
+          <option value="dana">Dana</option>
+          <option value="gopay">Gopay</option>
+          <option value="ovo">OVO</option>
+          <option value="shopee">Shopee Pay</option>
+        </select>
+        <br />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required /><br /><br />
+
+        <center>
+          <input type="submit" value="Submit" />
+        </center>
+      </form>
+    </div>
+
+    <!-- Tabel Rincian Pembeli -->
+    <div class="table-container" id="rincian-pembeli-container">
+        <center>
+            <h2>Rincian Pembeli</h2>
+        </center>
+      <table id="rincian-pembeli" style="display: none">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Item</th>
+            <th>Pembayaran via</th>
+            <th>Email</th>
+            <th>Total Harga</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Tabel Pendapatan Kotor dan Bersih -->
+    <div class="table-container" id="pendapatan-container">
+        <center>
+            <h2>Pendapatan Kotor dan Bersih</h2>
+        </center>
+      <table id="pendapatan" style="display: none">
+        <thead>
+          <tr>
+            <th>Total Pendapatan Kotor</th>
+            <th>Total Modal</th>
+            <th>Total Pendapatan Bersih</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
